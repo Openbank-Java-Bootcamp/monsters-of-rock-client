@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLRo7YbcYPNrOomR7Rfv3p090q_F2RuyazZnYdbxNQ=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Deftones",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967227/monsters-of-rock/deftones_gool7g.png",
+    "country": "United States",
+    "kind": "Alternative Metal",
+    "website": "http://www.deftones.com/",
+    "video": "https://www.youtube.com/watch?v=f0pdwd0miqs"
+  },
+  {
+    "id": 2,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLTn6nisae6gLzo4CS8Gn1sCbo3MaXOJZtjeo_SLIg=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Gojira",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967228/monsters-of-rock/gojira_vnkmog.png",
+    "country": "France",
+    "kind": "Technical death metal, Progressive metal",
+    "website": "http://gojira-music.com/",
+    "video": "https://www.youtube.com/watch?v=kl-2GUMijPM"
+  },
+  {
+    "id": 3,
+    "logo": "https://yt3.ggpht.com/5Xo1fA4h64FLFDQp9T4cYTfTArbneL5tkNcFhQh4kPKZuZ2zGXIv7hS-XVRwLMUt5cmOOZ1KTYI=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Ghost",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967228/monsters-of-rock/gojira_vnkmog.png",
+    "country": "Sweden",
+    "kind": "Heavy Metal, Doom Metal, Rock",
+    "website": "http://ghost-official.com/",
+    "video": "https://www.youtube.com/watch?v=SmTUHH3QBgE"
+  },
+  {
+    "id": 4,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLSDf2vfAQPxECmDd-1Y6a-mApxhjZ0nhcnfgkM=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Airbourne",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967208/monsters-of-rock/airburne_barowv.png",
+    "country": "Australia ",
+    "kind": "Hard Rock",
+    "website": "http://www.airbournerock.com/",
+    "video": "https://www.youtube.com/watch?v=YLGXDYqh2Fg"
+  },
+  {
+    "id": 5,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLQ-h1Md8mh2QQK61UaXIPr1-XA_fExdOd2L31v-sw=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Volbeat",
+    "image": "image",
+    "country": "Denmark ",
+    "kind": "Metal, Rock'n'Roll",
+    "website": "http://www.volbeat.dk/",
+    "video": "https://www.youtube.com/watch?v=ux4k5fE2D0M"
+  },
+  {
+    "id": 6,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLQvOKb-SXYKrnwyVK4AN4-mtCaqLXD-aJpBxfa4=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Deep Purple",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967512/monsters-of-rock/DeepPurple_yhhpak.png",
+    "country": "United Kingdom",
+    "kind": "Hard Rock, Progressive Rock",
+    "website": "http://www.deep-purple.com/",
+    "video": "https://www.youtube.com/watch?v=JH1c02aMEp0"
+  },
+  {
+    "id": 7,
+    "logo": "https://yt3.ggpht.com/WMYI3EhGsTP8mpl650PLyi9o7syJOC8_T5_QkXKhEwimElEWadJuEmccpf9t3TcpQiQhAOPPmno=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Five Finger Death Punch",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967227/monsters-of-rock/fivefingerdeathpunch_tigltk.png",
+    "country": "United States",
+    "kind": "Heavy Metal",
+    "website": "http://www.fivefingerdeathpunch.com/",
+    "video": "https://www.youtube.com/watch?v=Yh98oDIi75w"
+  },
+  {
+    "id": 8,
+    "logo": "https://yt3.ggpht.com/qTyBMgiqjSiyI9SS2EsdtRK_CKFAUc4RzzIIgnEeBt2a8j7vAHfgSHz0rwCHFWu5W1TPUTiT=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Judas Priest",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967227/monsters-of-rock/judasPriest_bhjfai.png",
+    "country": "United Kingdom",
+    "kind": " Heavy Metal",
+    "website": "http://judaspriest.com/",
+    "video": "https://www.youtube.com/watch?v=oGEosFMtUw8"
+  },
+  {
+    "id": 9,
+    "logo": "https://yt3.ggpht.com/dMx-EuelJM9toFUPPFp50cE2cyjdz2NYyl8uD5oajEu-us1QD214y2Cw8SNYE_oocfzx4HWIMA=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Korn",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967227/monsters-of-rock/korn_fqwudq.png",
+    "country": "United States",
+    "kind": " Nu metal, Alternative Metal",
+    "website": "https://www.youtube.com/hashtag/officialvideo",
+    "video": "https://youtu.be/rTRzuu2Zoak"
+  },
+  {
+    "id": 10,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLSWMMZ6mIIiubgUA575SXL-pMnoPSTwrw4-ieeYQg=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Mastodon",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967229/monsters-of-rock/mastodom_njdp81.png",
+    "country": "United States",
+    "kind": " Metal, Rock, Progressive",
+    "website": "http://www.mastodonrocks.com/",
+    "video": "https://www.youtube.com/watch?v=sx1L2XW1N0c"
+  },
+  {
+    "id": 11,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLQ4wkmTz21sEl9qI1HCWgZTeUXXE2DGfQbUjpNIPA=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Megadeth",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967229/monsters-of-rock/megadeth_commoa.png",
+    "country": "United States",
+    "kind": "Thrash Metal",
+    "website": "http://www.megadeth.com/home.php",
+    "video": "https://www.youtube.com/watch?v=WdoXZf-FZyA"
+  },
+  {
+    "id": 12,
+    "logo": "https://yt3.ggpht.com/ytc/AKedOLTfZlQisFAEx4AOEm0XI_WktCjgbMftSGRZmrtgTQ=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Suicidal Tendencies",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967228/monsters-of-rock/suicidalTendencies_zbqik7.png",
+    "country": "United States",
+    "kind": "Punk",
+    "website": "http://www.suicidaltendencies.com/",
+    "video": "https://www.youtube.com/watch?v=Lv2o1U93t2s"
+  },
+  {
+    "id": 13,
+    "logo": "https://yt3.ggpht.com/wpiHmX1cqrw-0Ar8Fprgwm2DJpQNqOzbYPw7iL_si7-K_6l1PNyyOEZCaYypZY8fS1Oc1vc8m6U=s88-c-k-c0x00ffffff-no-rj",
+    "name": "The Darkness",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967230/monsters-of-rock/the-darkness_obkhpa.png",
+    "country": "United Kingdom",
+    "kind": " Glam Metal",
+    "website": "https://www.thedarknesslive.com/",
+    "video": "https://www.youtube.com/watch?v=Hr-42-4w2mQ"
+  },
+  {
+    "id": 14,
+    "logo": "https://yt3.ggpht.com/VbU3yFk3t1Z5BuggOmREKJzzpz7kwqN0F63Ync01sdkWLtyGbyev0doOsrwf6a77QVHftZx6XA=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Scorpions",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967228/monsters-of-rock/scorpions_vjklly.png",
+    "country": "Germany",
+    "kind": "Hard rock​; Heavy metal",
+    "website": "https://www.the-scorpions.com/",
+    "video": "https://youtu.be/Q-718NVW-G4"
+  },
+  {
+    "id": 15,
+    "logo": "https://yt3.ggpht.com/ZjcQii3sVKaPcGK3rIm8vot-qwdmm7KAHsWCjlQLsDLa_tm2kykM-Lgmty1IwQWehj7nEzXPUA=s88-c-k-c0x00ffffff-no-rj",
+    "name": "Metallica",
+    "image": "https://res.cloudinary.com/dziqbj8rm/image/upload/v1654967227/monsters-of-rock/metallica_j065n7.png",
+    "country": "United States",
+    "kind": "Thrash Metal",
+    "website": "https://www.metallica.com/",
+    "video": "https://www.youtube.com/hashtag/metinmanchester"
+  }
+]
