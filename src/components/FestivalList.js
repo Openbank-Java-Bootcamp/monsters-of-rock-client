@@ -10,13 +10,8 @@ function FestivalList() {
   const [festivals, setfestivals] = useState([]);
 
   const getAllFestivals = () => {
-    const storedToken = localStorage.getItem("authToken");
-
     axios
       .get(`${API_URL}/api/festivals`)
-      // , {
-      //   headers: { Authorization: `Bearer ${storedToken}` },
-      // })
       .then((response) => setfestivals(response.data))
       .catch((error) => console.log(error));
   };
@@ -27,18 +22,15 @@ function FestivalList() {
 
   return (
     <div className="FestivalListPage">
-
-      {/* <IsPrivate>
+      <IsPrivate>
         <AddFestival refreshFestivals={getAllFestivals} />
-      </IsPrivate> */}
+      </IsPrivate>
 
-        <div className="festival-list">
-          {festivals.map((festival) => (
-            <FestivalCard key={festival.id} {...festival} />
-          ))}
-        </div>
-     
-     
+      <div className="festival-list">
+        {festivals.map((festival) => (
+          <FestivalCard key={festival.id} {...festival} />
+        ))}
+      </div>
     </div>
   );
 }

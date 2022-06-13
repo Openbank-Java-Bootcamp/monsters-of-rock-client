@@ -102,6 +102,10 @@ button {
   flex-direction: column;
   padding: 0.7rem;
 }
+.multiselect-form{
+  padding-top: 3rem;
+  color: black;
+}
 
 div.homepage,
 div.festival-list {
