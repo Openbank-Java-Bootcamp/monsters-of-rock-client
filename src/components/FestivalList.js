@@ -1,6 +1,7 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import AddFestival from "./AddFestival";
+import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../context/auth.context";
 import FestivalCard from "./FestivalCard";
 import IsPrivate from "./IsPrivate";
 
@@ -8,6 +9,7 @@ const API_URL = "http://localhost:5005";
 
 function FestivalList() {
   const [festivals, setfestivals] = useState([]);
+  const { isLoggedIn } = useContext(AuthContext);
 
   const getAllFestivals = () => {
     axios
@@ -22,9 +24,11 @@ function FestivalList() {
 
   return (
     <div className="FestivalListPage">
-      <IsPrivate>
-        <AddFestival refreshFestivals={getAllFestivals} />
-      </IsPrivate>
+      {isLoggedIn && (
+        <Link to="/add-festival">
+          <button className="btn-rock">Add Festival</button>
+        </Link>
+      )}
 
       <div className="festival-list">
         {festivals.map((festival) => (

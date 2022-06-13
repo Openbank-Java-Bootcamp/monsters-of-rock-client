@@ -2,11 +2,11 @@ import useBandsList from "./Hooks/useBandsList";
 import BandCard from "./BandCard";
 
 
-export const BandList = () => {
+const BandList = () => {
   const [ bands ] = useBandsList();  
 
   return (
-    <div className="container-band">
+    <div className="band-list">
       {bands.map((band) => {
         return (
           <BandCard key={ band.id } {...band}/>
@@ -15,3 +15,5 @@ export const BandList = () => {
     </div>
   );
 };
+
+export default BandList;

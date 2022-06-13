@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
-import useBandsList from "./Hooks/useBandsList";
+import useBandsList from "../components/Hooks/useBandsList";
 
 const API_URL = "http://localhost:5005";
 
-function AddFestival(props) {
+function AddFestivalPage(props) {
   const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const [dates, setDates] = useState("");
@@ -19,13 +19,13 @@ function AddFestival(props) {
 
   const [bandsList] = useBandsList();
   const [selected, setSelected] = useState([]);
-  console.log("selected",selected)
+  console.log("selected", selected);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     //add the selected elements to the array bandsSelected
     selected.map((elem) => bandsSelected.push(elem.value));
-    console.log("===>",bandsSelected)
+    console.log("===>", bandsSelected);
     const requestBody = {
       image,
       name,
@@ -40,7 +40,7 @@ function AddFestival(props) {
     };
 
     const storedToken = localStorage.getItem("authToken");
-    console.log("body",requestBody)
+    console.log("body", requestBody);
 
     axios
       .post(`${API_URL}/api/festivals`, requestBody, {
@@ -59,7 +59,7 @@ function AddFestival(props) {
         setBands([]);
         props.refreshFestivals();
       })
-      .catch((error) => console.log("error"));
+      .catch((error) => console.log(error));
   };
 
   return (
@@ -150,7 +150,7 @@ function AddFestival(props) {
           className="multiselect-form"
           options={bandsList.map((band) => {
             return {
-              value: band.id,
+              value: band,
               label: band.name,
             };
           })}
@@ -167,4 +167,4 @@ function AddFestival(props) {
   );
 }
 
-export default AddFestival;
+export default AddFestivalPage;

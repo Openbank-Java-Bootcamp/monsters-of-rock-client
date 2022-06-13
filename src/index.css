@@ -108,16 +108,19 @@ button {
 }
 
 div.homepage,
-div.festival-list {
+div.festival-list,
+div.band-list {
   width: 100%;
   margin: 2rem;
 }
+
 .FestivalListPage{
   display: flex;
   flex-direction: column;
 }
 
-.festival-list {
+.festival-list,
+.band-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

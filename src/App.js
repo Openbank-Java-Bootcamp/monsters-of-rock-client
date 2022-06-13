@@ -6,6 +6,8 @@ import SignupPage from "./Pages/SignupPage";
 import IsAnon from "./components/IsAnon";
 import HomePage from "./Pages/HomePage";
 import FestivalDetailsPage from "./Pages/FestivalDetailsPage";
+import AddFestivalPage from "./Pages/AddFestivalPage";
+import BandsPage from "./Pages/BandsPage";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/add-festival" element={<AddFestivalPage />} />
+        <Route path="/bands" element={<BandsPage />} />
         <Route
           path="/signup"
           element={
