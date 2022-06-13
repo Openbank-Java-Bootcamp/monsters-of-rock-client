@@ -35,13 +35,11 @@ function FestivalDetailsPage() {
             <h1>{festival.name}</h1>
             <p>Dates:{festival.dates}</p>
             <p>Website:{festival.website}</p>
-            <p>
-              Address:{festival.address.street},{festival.address.number},Cp:
-              {festival.address.postCode},{festival.address.city},
-              {festival.address.country}
-            </p>
+            <p>Address:{festival.address}</p>
+            <p>City:{festival.city}</p>
+            <p>Country:{festival.country}</p>
             <p>Tickets:{festival.tickets}</p>
-            <p>Info:{festival.map}</p>
+            <p>Info:{festival.info}</p>
             <div className="btn-container">
               <Link to="/">
                 <button>Back to festivals</button>

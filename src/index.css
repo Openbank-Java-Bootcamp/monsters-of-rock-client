@@ -1,6 +1,6 @@
-*{
+* {
   padding: 0;
-  margin:0;
+  margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -8,44 +8,43 @@
 
 body {
   margin: 0;
-  background-image:url("./assets/festiva-03.png");
+  background-image: url("./assets/festiva-03.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;  
+  background-color: black;
 }
 @font-face {
-  font-family: "Medium";   /*Can be any text*/
-  src: local("ironMaidenFont"),
-    url("./fonts/maiden.ttf") format("truetype");
+  font-family: "Medium"; /*Can be any text*/
+  src: local("ironMaidenFont"), url("./fonts/maiden.ttf") format("truetype");
 }
 
-nav{
+nav {
   background-image: url("./assets/fire.png");
-  background-size: contain; 
+  background-size: contain;
   background-repeat: repeat-x;
   background-position: bottom;
   height: 7rem;
   width: 100%;
 }
 
-label.navbar{
+label.navbar {
   color: white;
   font-size: 2.5rem;
   line-height: 5rem;
   font-weight: bold;
 }
 
-.navbar-img{
+.navbar-img {
   width: 13%;
   float: left;
   margin: 1rem 2rem;
 }
-nav ul{
+nav ul {
   float: right;
-  margin-right: 2rem;    
+  margin-right: 2rem;
 }
 
-button{
+button {
   background-image: url("./assets/metal.png");
   background-size: cover;
   font-family: "Medium";
@@ -53,63 +52,68 @@ button{
   display: inline-block;
   padding: 1rem;
   margin: 2rem 1rem;
-  text-transform: uppercase;  
-  letter-spacing: .1rem;
-  border-radius: .5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
 }
 
 .btn-rock:link,
-.btn-rock:visited{
+.btn-rock:visited {
   text-decoration: none;
   padding: 1rem 1rem;
   display: inline-block;
   width: 10rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   font-size: 1.6rem;
 }
 
 .btn-rock:hover {
-  transform: translateY(-.3rem);
+  transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(255, 253, 253, 0.5);
 }
 
 .btn-rock:active {
-  transform: translateY(-.1rem);
+  transform: translateY(-0.1rem);
 }
 
-.form-container{
+.form-container {
   color: white;
   background-color: black;
   border: 1px solid grey;
-  box-shadow: 0rem .1rem .2rem grey;
+  box-shadow: 0rem 0.1rem 0.2rem grey;
   width: 25rem;
   text-align: center;
   margin: 6.5rem auto;
   margin-bottom: 1.2rem;
-  padding: .9rem;
-  border-radius: .4rem;
+  padding: 0.9rem;
+  border-radius: 0.4rem;
 }
 
-.Form-form, .form-label{
+.Form-form,
+.form-label {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: .7rem;
+  padding: 0.7rem;
 }
-.form-input{
+.form-input {
   color: black;
   display: flex;
   flex-direction: column;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
-
-div.homepage, div.festival-list{  
-  width:100%;
+div.homepage,
+div.festival-list {
+  width: 100%;
   margin: 2rem;
 }
+.FestivalListPage{
+  display: flex;
+  flex-direction: column;
+}
 
-.festival-list{
+.festival-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -118,66 +122,65 @@ div.homepage, div.festival-list{
   margin: 2.5rem;
 }
 
-.festival-card{
+.festival-card {
   width: 11rem;
   height: 17.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   box-shadow: 0px 1.5px 3px grey;
-  margin: 2rem 3rem 0.5rem 3rem;
-  background:radial-gradient(rgba(236, 156, 52, 0.082),rgba(253, 60, 43, 0.932));
+  margin: 1rem 3rem 0.5rem 3rem;
+  background: radial-gradient(
+    rgba(253, 219, 109, 0.762),
+    rgba(200, 80, 5, 0.941)
+  );
   border-radius: 4px;
 }
-.h3-festival-card{
-  font-family:"Medium";
+.h3-festival-card {
+  font-family: "Medium";
   color: black;
   font-weight: 800;
 }
 
-.img-festival-card{
-  width:10rem;
+.img-festival-card {
+  width: 10rem;
   height: 12rem;
-  padding: .3rem;
+
 }
 
-div.festivalDetails-container{
+div.festivalDetails-container {
   margin: 2rem 3rem 0.5rem 3rem;
   width: max-content;
   display: flex;
   flex-direction: column;
 }
 
-.festivalDetails-card{
+.festivalDetails-card {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 1rem;
-  
 }
 
-.bilboard{
-  width:22rem;  
-  margin-right:5rem;
+.bilboard {
+  width: 22rem;
+  margin-right: 5rem;
 }
 
-.card-article{
+.card-article {
   color: white;
   display: flex;
   flex-direction: column;
   width: 50rem;
-  padding: .7rem;
+  padding: 0.7rem;
 }
-.btn-container{
+.btn-container {
   width: max-content;
   display: flex;
   flex-direction: row;
   align-content: center;
 }
 
-ul.band-list{
-  
+ul.band-list {
   display: flex;
   flex-direction: row;
   align-content: space-around;
 }
-
-  
