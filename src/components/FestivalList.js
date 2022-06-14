@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 import FestivalCard from "./FestivalCard";
-import IsPrivate from "./IsPrivate";
+
 
 const API_URL = "http://localhost:5005";
 

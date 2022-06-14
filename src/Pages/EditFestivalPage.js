@@ -1,12 +1,12 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useBandsList from "../components/Hooks/useBandsList";
 
 const API_URL = "http://localhost:5005";
 
-function AddFestivalPage(props) {
+function EditFestivalPage() {
   const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const [dates, setDates] = useState("");
@@ -20,6 +20,8 @@ function AddFestivalPage(props) {
 
   const [bandsList] = useBandsList();
   const [selected, setSelected] = useState([]);
+
+  const { festivalId } = useParams();
 
   const navigate = useNavigate();
 
@@ -40,9 +42,34 @@ function AddFestivalPage(props) {
     setImage(btoa(binaryString));
   };
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    const storedToken = localStorage.getItem("authToken");
+    // <== ADD
+    axios
+      .get(`${API_URL}/api/festivals/${festivalId}`, {
+        headers: { Authorization: `Bearer ${storedToken}` },
+      })
+      .then((response) => {
+        const oneFestival = response.data;
+        setImage(oneFestival.image);
+        setName(oneFestival.name);
+        setDates(oneFestival.dates);
+        setAddress(oneFestival.address);
+        setCity(oneFestival.city);
+        setCountry(oneFestival.country);
+        setWebsite(oneFestival.website);
+        setInfo(oneFestival.info);
+        setTickets(oneFestival.tickets);
+        setBands(oneFestival.bands);
+      })
+      .catch((error) => console.log(error));
+  }, [festivalId]);
+
+  const handleFormSubmit = (e) => {
+    // <== ADD
     e.preventDefault();
-    //add the selected elements to the array bandsSelected
+    const storedToken = localStorage.getItem("authToken");
+    // Create an object representing the body of the PUT request
     selected.map((elem) => bands.push(elem.value));
     const requestBody = {
       image,
@@ -57,34 +84,35 @@ function AddFestivalPage(props) {
       bands,
     };
 
-    const storedToken = localStorage.getItem("authToken");
-    console.log("body", requestBody);
-
+    // Make a PUT request to update the project
     axios
-      .post(`${API_URL}/api/festivals`, requestBody, {
+      .put(`${API_URL}/api/festivals/${festivalId}`, requestBody, {
         headers: { Authorization: `Bearer ${storedToken}` },
       })
       .then((response) => {
-        setImage("");
-        setName("");
-        setDates("");
-        setAddress("");
-        setCity("");
-        setCountry("");
-        setWebsite("");
-        setInfo("");
-        setTickets("");
-        setBands([]);
+        // Once the request is resolved successfully and the project
+        // is updated we navigate back to the details page
+        navigate("/festivals/" + festivalId);
+      });
+  };
+
+  const deleteFestival = () => {
+    const storedToken = localStorage.getItem("authToken");
+    axios
+      .delete(`${API_URL}/api/festivals/${festivalId}`, {
+        headers: { Authorization: `Bearer ${storedToken}` },
+      })
+      .then(() => {
         navigate("/");
       })
-      .catch((error) => console.log(error));
+      .catch((err) => console.log(err));
   };
 
   return (
     <div className="form-container">
       <form
         className="Form-form"
-        onSubmit={handleSubmit}
+        onSubmit={handleFormSubmit}
         onChange={(e) => onFormChange(e)}
       >
         <label className="form-label">Image:</label>
@@ -182,11 +210,14 @@ function AddFestivalPage(props) {
         />
 
         <button className="btn-rock" type="submit">
-          Add Festival
+          Update
+        </button>
+        <button className="btn-rock" onClick={deleteFestival}>
+          Delete
         </button>
       </form>
     </div>
   );
 }
 
-export default AddFestivalPage;
+export default EditFestivalPage;

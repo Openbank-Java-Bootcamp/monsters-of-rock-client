@@ -30,7 +30,11 @@ function FestivalDetailsPage() {
     <div className="festivalDetails-container">
       {festival && (
         <div className="festivalDetails-card">
-          <img className="bilboard" src={festival.image} alt="bilboard" />
+          <img
+            className="bilboard"
+            src={`data:image/png;base64,${festival.image}`}
+            alt="bilboard"
+          />
           <article className="card-article">
             <h1>{festival.name}</h1>
             <p>Dates:{festival.dates}</p>
