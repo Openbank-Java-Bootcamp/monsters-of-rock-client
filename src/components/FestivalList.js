@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../context/auth.context";
 import FestivalCard from "./FestivalCard";
 
-
 const API_URL = "http://localhost:5005";
 
 function FestivalList() {
@@ -24,11 +23,16 @@ function FestivalList() {
 
   return (
     <div className="FestivalListPage">
-      {isLoggedIn && (
-        <Link to="/add-festival">
-          <button className="btn-rock">Add Festival</button>
+      <div className="festivalList btn-container">
+        {isLoggedIn && (
+          <Link to="/add-festival">
+            <button className="btn-rock">Add Festival</button>
+          </Link>
+        )}
+        <Link to="/bands">
+          <button className="btn-rock">Bands</button>
         </Link>
-      )}
+      </div>
 
       <div className="festival-list">
         {festivals.map((festival) => (

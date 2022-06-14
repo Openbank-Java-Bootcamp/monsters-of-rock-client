@@ -1,13 +1,16 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link, useParams } from "react-router-dom";
+import website from "../assets/website.png";
+import { AuthContext } from "../context/auth.context";
+import "../Pages/BandsDetailsPage.css"
 
 const API_URL = "http://localhost:5005";
 
 export const BandsDetailsPage = () => {
   const [band, setBand] = useState(null);
-
+  const { isLoggedIn } = useContext(AuthContext);
   const { bandId } = useParams();
 
   const getBand = () => {
@@ -36,18 +39,29 @@ export const BandsDetailsPage = () => {
             />
           </div>
           <div className="band-column">
-            <ReactPlayer url={band.video} playing controls volume="0.5" />
-            <article>
-              <h3>{band.country}</h3>
-              <h3>Kind:{band.kind}</h3>
-              <h3>Website:{band.website}</h3>
+            <ReactPlayer
+              className="video-player"
+              url={band.video}
+              playing
+              controls
+              volume="0.5"
+            />
+            <article className="article-data">
+              <h2>{band.name}</h2>
+              <h3>Country: {band.country}</h3>
+              <h3>Kind: {band.kind}</h3>
+              <a href={band.website}>
+                <img src={website} width="40" alt="world" />
+              </a>
               <div className="btn-container">
                 <Link to="/bands">
                   <button>Back to Bands</button>
                 </Link>
-                <Link to={`/bands/edit/${bandId}`}>
-                  <button>Edit festival</button>
-                </Link>
+                {isLoggedIn && (
+                  <Link to={`/bands/edit/${bandId}`}>
+                    <button>Edit Band</button>
+                  </Link>
+                )}
               </div>
             </article>
           </div>

@@ -1,13 +1,16 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import BandCard from "../components/BandCard";
+import { AuthContext } from "../context/auth.context";
+import { motion } from "framer-motion";
+import "../Pages/FestivalDetailsPage.css"
 
 const API_URL = "http://localhost:5005";
 
 function FestivalDetailsPage() {
   const [festival, setFestival] = useState(null);
-
+  const { isLoggedIn } = useContext(AuthContext);
   const { festivalId } = useParams();
 
   const getFestival = () => {
@@ -22,6 +25,7 @@ function FestivalDetailsPage() {
 
   useEffect(() => {
     getFestival();
+  
   }, []);
 
   console.log("first", festival);
@@ -48,23 +52,30 @@ function FestivalDetailsPage() {
               <Link to="/">
                 <button>Back to festivals</button>
               </Link>
-              <Link to={`/festivals/edit/${festivalId}`}>
-                <button>Edit festival</button>
-              </Link>
+              {isLoggedIn && (
+                <Link to={`/festivals/edit/${festivalId}`}>
+                  <button>Edit festival</button>
+                </Link>
+              )}
             </div>
           </article>
         </div>
       )}
-      {festival && (
-        <ul className="band-list">
-          Line up:
-          {festival.bands.map((band) => (
-            <li>
-              <BandCard key={band.id} {...band} />
-            </li>
-          ))}
-        </ul>
-      )}
+      <motion.div className="slider-container">
+        {festival && (
+          <motion.div
+            className="slider"
+            drag="x"
+            dragConstraints={{ right:300,left:-300 }}
+          >
+            {festival.bands.map((band) => (
+              <motion.div className="item">
+                <BandCard key={band.id} {...band} />
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </motion.div> 
     </div>
   );
 }

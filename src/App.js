@@ -12,20 +12,53 @@ import EditFestivalPage from "./Pages/EditFestivalPage";
 import AddBandPage from "./Pages/AddBandPage";
 import EditBandPage from "./Pages/EditBandPage";
 import { BandsDetailsPage } from "./Pages/BandsDetailsPage";
+import IsPrivate from "./components/IsPrivate";
 
 function App() {
+
   return (
     <div className="App">
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/add-festival" element={<AddFestivalPage />} />
-        <Route path="/bands/add" element={<AddBandPage/>} />
-        <Route path="/festivals/edit/:festivalId" element={<EditFestivalPage />} />
-        <Route path="/bands/edit/:bandId" element={<EditBandPage />} />
+        <Route
+          path="/add-festival"
+          element={
+            <IsPrivate>
+              <AddFestivalPage />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/bands/add"
+          element={
+            <IsPrivate>
+              <AddBandPage />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/festivals/edit/:festivalId"
+          element={
+            <IsPrivate>
+              <EditFestivalPage />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/bands/edit/:bandId"
+          element={
+            <IsPrivate>
+              <EditBandPage />
+            </IsPrivate>
+          }
+        />
         <Route path="/bands" element={<BandsPage />} />
         <Route path="/bands/:bandId" element={<BandsDetailsPage />} />
-        <Route path="/festivals/:festivalId" element={<FestivalDetailsPage />} />      
+        <Route
+          path="/festivals/:festivalId"
+          element={<FestivalDetailsPage />}
+        />
         <Route
           path="/signup"
           element={

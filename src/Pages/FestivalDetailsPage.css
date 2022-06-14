@@ -1,0 +1,53 @@
+
+div.festivalDetails-container {
+    margin: 1rem 0 0.5rem 0;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left:8%;
+  }
+  
+  .festivalDetails-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .bilboard {
+    width: 20rem;
+    margin-right: 5rem;
+  }
+  
+  article.card-article {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    padding: 1rem;
+  }
+  .btn-container {
+    width: max-content;
+    display: flex;
+    flex-direction: row;  
+    margin-left: 20%;
+  }
+  
+  .slider-container{
+    margin:0 auto;
+    overflow-x: hidden;
+    width: 50rem;
+  }
+  
+  .slider{
+    display: flex;
+    cursor:grab;
+    justify-content: center;
+  }
+  
+  
+  ul.band-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
