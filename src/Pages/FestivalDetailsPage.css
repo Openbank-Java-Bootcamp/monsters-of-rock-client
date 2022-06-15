@@ -1,53 +1,78 @@
-
 div.festivalDetails-container {
-    margin: 1rem 0 0.5rem 0;
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    margin-left:8%;
-  }
+  width: 100vw;
+  padding: 1rem 0 0.5rem 10rem;
+  display: flex;
+  flex-direction: column;  
+}
+
+.festivalDetails-card {
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.bilboard {
+  width: 18rem;
+  margin-right: 3rem;
+}
+
+article.card-article {
+  color: rgb(163, 159, 159);
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  padding: 1rem;
+}
+.web-logo {
+  margin: 2rem;
+}
+
+div.btn-rock-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
+
+div.carousel-container{
+  width: 100vw; 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  cursor: grab;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.slider {
+  width: 40rem;
+  display: flex;
+}
+img.arrow{
+  padding: 0;
   
-  .festivalDetails-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .bilboard {
-    width: 20rem;
-    margin-right: 5rem;
-  }
-  
-  article.card-article {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    width: 50rem;
-    padding: 1rem;
-  }
-  .btn-container {
-    width: max-content;
-    display: flex;
-    flex-direction: row;  
-    margin-left: 20%;
-  }
-  
-  .slider-container{
-    margin:0 auto;
-    overflow-x: hidden;
-    width: 50rem;
-  }
-  
-  .slider{
-    display: flex;
-    cursor:grab;
-    justify-content: center;
-  }
-  
-  
-  ul.band-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+}
+
+ul.band-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 2rem;
+}
+
+h1 {
+  font-family: "Medium";
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  color: rgb(77, 74, 74);
+}
+
+p {
+  margin-top: 0.5rem;
+}

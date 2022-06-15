@@ -35,7 +35,7 @@ label.navbar {
 }
 
 .navbar-img {
-  width: 13%;
+  width: 15vw;
   float: left;
   margin: 1rem 2rem;
 }
@@ -48,10 +48,10 @@ button {
   background-image: url("./assets/metal.png");
   background-size: cover;
   font-family: "Medium";
-  font-weight: 800;
+  font-weight: 900;
   display: inline-block;
   padding: 1rem;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   border-radius: 0.5rem;
@@ -59,8 +59,7 @@ button {
 
 .btn-rock:link,
 .btn-rock:visited {
-  text-decoration: none;
-  padding: 1rem 1rem;
+  text-decoration: none;  
   display: inline-block;
   width: 10rem;
   border-radius: 0.8rem;
@@ -112,21 +111,36 @@ label.form-label{
   color: black;
 }
 
-div.homepage,
-div.festival-list,
-div.band-list {
-  width: 100%;
-  margin: 1rem;
-}
-
 .FestivalListPage {
+  width:100vw;
   display: flex;
   flex-direction: column;
 }
 div.festivalList.btn-container {
+  
   display: flex;
   flex-direction: row;  
-  
+  justify-content: space-evenly;
+  height: 6rem;
+}
+div.searchBar-container{
+  padding: .2rem;
+  height: 5rem;
+  border: 0.01rem rgb(36, 35, 35) solid;
+  border-radius: 1rem;
+  color: lightgrey;
+  align-items: center;
+}
+
+input.ant-input{
+  margin: 0 1rem 0.5rem 1rem;
+  height: 2rem;
+  width: 18rem;
+  background-image:url("./assets/search.png");
+  background-size: 10%;
+  background-position: left;  
+  background-repeat: no-repeat;
+  text-indent: 3rem;
 }
 
 .festival-list,
@@ -140,8 +154,12 @@ div.festivalList.btn-container {
   margin: 2.5rem;
 }
 
+div.band-list{
+  margin-left: 6%;
+}
+
 div.band-card{
-  margin: 1rem;
+  margin: .5rem;
 }
 .bandList-h3{
   width: 8rem;
@@ -150,13 +168,16 @@ div.band-card{
 }
 
 .bandList-img{
+  width: 60%;
   border-radius: 10rem;
   pointer-events: none;
+  border: 0.1rem solid rgba(50, 48, 48, 0.941);
+  box-shadow: 0rem 0.1rem 0.2rem grey;
 }
 
 .festival-card {
   width: 11rem;
-  height: 17.5rem;
+  height: 18rem;
   padding: 0.5rem;
   box-shadow: 0px 1.5px 3px grey;
   margin: 1rem 3rem 0.5rem 3rem;
@@ -170,9 +191,10 @@ div.band-card{
   font-family: "Medium";
   color: black;
   font-weight: 800;
+  font-size: .9rem;
 }
 
 .img-festival-card {
   width: 10rem;
-  height: 12rem;
+  height: 11rem;
 }

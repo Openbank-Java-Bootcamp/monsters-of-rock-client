@@ -46,7 +46,7 @@ export const BandsDetailsPage = () => {
               controls
               volume="0.5"
             />
-            <article className="article-data">
+            <article className="article-data-bands">
               <h2>{band.name}</h2>
               <h3>Country: {band.country}</h3>
               <h3>Kind: {band.kind}</h3>

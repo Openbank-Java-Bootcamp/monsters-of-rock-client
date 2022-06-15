@@ -15,7 +15,7 @@ function BandsPage() {
       )}
       <BandList />
       <Link to="/">
-        <button>Back to HomePage</button>
+        <button className="btn-rock">Back to HomePage</button>
       </Link>
     </div>
   );

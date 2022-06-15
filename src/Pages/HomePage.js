@@ -1,10 +1,9 @@
-import FestivalList from '../components/FestivalList';
-  
+import FestivalList from "../components/FestivalList";
+
 export default function HomePage() {
-     return (
-       <div className='homepage'> 
-      
-       <FestivalList/>
-       </div>
-     )
-   };
+  return (
+    <div className="homepage">
+      <FestivalList />
+    </div>
+  );
+}
