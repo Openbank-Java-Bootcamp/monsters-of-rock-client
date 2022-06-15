@@ -59,7 +59,7 @@ button {
 
 .btn-rock:link,
 .btn-rock:visited {
-  text-decoration: none;  
+  text-decoration: none;
   display: inline-block;
   width: 10rem;
   border-radius: 0.8rem;
@@ -76,14 +76,14 @@ button {
   transform: translateY(-0.1rem);
 }
 
-.form-container {  
+.form-container {
   color: white;
   background-color: black;
   border: 1px solid grey;
   box-shadow: 0rem 0.1rem 0.2rem grey;
   width: 40rem;
   text-align: center;
-  margin: 0.5rem auto;  
+  margin: 0.5rem auto;
   padding: 0.5rem;
   border-radius: 0.4rem;
 }
@@ -93,9 +93,9 @@ button {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;  
+  padding: 0.5rem;
 }
-label.form-label{
+label.form-label {
   align-items: flex-start;
 }
 
@@ -112,19 +112,18 @@ label.form-label{
 }
 
 .FestivalListPage {
-  width:100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 div.festivalList.btn-container {
-  
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-evenly;
   height: 6rem;
 }
-div.searchBar-container{
-  padding: .2rem;
+div.searchBar-container {
+  padding: 0.2rem;
   height: 5rem;
   border: 0.01rem rgb(36, 35, 35) solid;
   border-radius: 1rem;
@@ -132,20 +131,19 @@ div.searchBar-container{
   align-items: center;
 }
 
-input.ant-input{
+input.ant-input {
   margin: 0 1rem 0.5rem 1rem;
   height: 2rem;
   width: 18rem;
-  background-image:url("./assets/search.png");
+  background-image: url("./assets/search.png");
   background-size: 10%;
-  background-position: left;  
+  background-position: left;
   background-repeat: no-repeat;
   text-indent: 3rem;
 }
 
 .festival-list,
 .band-list {
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,20 +152,20 @@ input.ant-input{
   margin: 2.5rem;
 }
 
-div.band-list{
+div.band-list {
   margin-left: 6%;
 }
 
-div.band-card{
-  margin: .5rem;
+div.band-card {
+  margin: 0 0.5rem;
 }
-.bandList-h3{
+.bandList-h3 {
   width: 8rem;
   height: 4rem;
   color: white;
 }
 
-.bandList-img{
+.bandList-img {
   width: 60%;
   border-radius: 10rem;
   pointer-events: none;
@@ -191,7 +189,7 @@ div.band-card{
   font-family: "Medium";
   color: black;
   font-weight: 800;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .img-festival-card {

@@ -1,6 +1,6 @@
 div.festivalDetails-container {
   width: 100vw;
-  padding: 1rem 0 0.5rem 10rem;
+  padding: 0 0 0.5rem 10rem;
   display: flex;
   flex-direction: column;  
 }
@@ -53,8 +53,7 @@ div.carousel-container{
   display: flex;
 }
 img.arrow{
-  padding: 0;
-  
+  padding: 0;  
 }
 
 ul.band-list {
