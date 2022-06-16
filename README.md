@@ -1,4 +1,4 @@
-<<h1 align="center"> <strong>Monsters of rock</strong></h1>
+<h1 align="center"> <strong>Monsters of rock</strong></h1>
 
 ## Description of the project
 
@@ -12,10 +12,10 @@
   Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
 </p>
 <br>
-![plot](./src/assets/wireframe1.png)
-![plot](./src/assets/wireframe2.png)
-![plot](./src/assets/wireframe3.png)
-![plot](./src/assets/wireframe4.png)
+![wireframe1](./src/assets/wireframe1.png)
+![wireframe2](./src/assets/wireframe2.png)
+![wireframe3](./src/assets/wireframe3.png)
+![wireframe4](./src/assets/wireframe4.png)
 <br>
 
 ## Setup
