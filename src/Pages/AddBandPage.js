@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const API_URL = "http://localhost:5005";
 
@@ -83,77 +83,84 @@ function AddBandPage(props) {
   };
 
   return (
-    <div className="form-container">
-      <form className="Form-form" onSubmit={handleSubmit}>
-        <label className="form-label">Logo:</label>
-        <input
-          className="form-input"
-          type="file"
-          name="logo"
-          id="file"
-          accept=".jpeg, .png, .jpg"
-          onChange={(e) => onLogoChange(e)}
-        />
+    <div className="addpage-container">
+      <div className="form-container">
+        <form className="Form-form" onSubmit={handleSubmit}>
+          <label className="form-label">Logo:</label>
+          <input
+            className="form-input"
+            type="file"
+            name="logo"
+            id="file"
+            accept=".jpeg, .png, .jpg"
+            onChange={(e) => onLogoChange(e)}
+          />
 
-        <label className="form-label">Name:</label>
-        <input
-          className="form-input"
-          type="text"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+          <label className="form-label">Name:</label>
+          <input
+            className="form-input"
+            type="text"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
-        <label className="form-label">Image:</label>
-        <input
-          className="form-input"
-          type="file"
-          name="image"
-          id="file"
-          accept=".jpeg, .png, .jpg"
-          onChange={(e) => onImageChange(e)}
-        />
+          <label className="form-label">Image:</label>
+          <input
+            className="form-input"
+            type="file"
+            name="image"
+            id="file"
+            accept=".jpeg, .png, .jpg"
+            onChange={(e) => onImageChange(e)}
+          />
 
-        <label className="form-label">Country:</label>
-        <input
-          className="form-input"
-          type="text"
-          name="country"
-          value={country}
-          onChange={(e) => setCountry(e.target.value)}
-        />
+          <label className="form-label">Country:</label>
+          <input
+            className="form-input"
+            type="text"
+            name="country"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
+          />
 
-        <label className="form-label">Kind:</label>
-        <input
-          className="form-input"
-          type="text"
-          name="kind"
-          value={kind}
-          onChange={(e) => setKind(e.target.value)}
-        />
+          <label className="form-label">Kind:</label>
+          <input
+            className="form-input"
+            type="text"
+            name="kind"
+            value={kind}
+            onChange={(e) => setKind(e.target.value)}
+          />
 
-        <label className="form-label">Website:</label>
-        <input
-          className="form-input"
-          type="text"
-          name="website"
-          value={website}
-          onChange={(e) => setWebsite(e.target.value)}
-        />
+          <label className="form-label">Website:</label>
+          <input
+            className="form-input"
+            type="text"
+            name="website"
+            value={website}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
 
-        <label className="form-label">Video:</label>
-        <input
-          className="form-input"
-          type="text"
-          name="video"
-          value={video}
-          onChange={(e) => setVideo(e.target.value)}
-        />
+          <label className="form-label">Video:</label>
+          <input
+            className="form-input"
+            type="text"
+            name="video"
+            value={video}
+            onChange={(e) => setVideo(e.target.value)}
+          />
 
-        <button className="btn-rock" type="submit">
-          Add Band
-        </button>
-      </form>
+          <button className="btn-rock" type="submit">
+            Add Band
+          </button>
+        </form>
+      </div>
+      <div className="addBtn-container">
+        <Link to="/bands">
+          <button>Back to Bands</button>
+        </Link>
+      </div>
     </div>
   );
 }

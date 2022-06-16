@@ -75,6 +75,18 @@ button {
 .btn-rock:active {
   transform: translateY(-0.1rem);
 }
+div.addpage-container{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.addBtn-container{
+  display: flex;
+  align-items: center;
+}
 
 .form-container {
   color: white;
@@ -83,7 +95,7 @@ button {
   box-shadow: 0rem 0.1rem 0.2rem grey;
   width: 40rem;
   text-align: center;
-  margin: 0.5rem auto;
+  margin: 1% 10% 0 20%;
   padding: 0.5rem;
   border-radius: 0.4rem;
 }

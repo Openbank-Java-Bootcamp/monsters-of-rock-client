@@ -16,7 +16,9 @@ const API_URL = "http://localhost:5005";
 function FestivalDetailsPage() {
   const [festival, setFestival] = useState(null);
   const [width, setWidth] = useState(0);
+  const [loading, setLoading] = useState(true);
   const carousel = useRef();
+  const isInitialMount = useRef(true);
 
   const { isLoggedIn } = useContext(AuthContext);
   const { festivalId } = useParams();
@@ -27,15 +29,24 @@ function FestivalDetailsPage() {
       .then((response) => {
         const oneFestival = response.data;
         setFestival(oneFestival);
+        setLoading(false);
       })
       .catch((error) => console.log(error));
   };
 
   useEffect(() => {
-    //to calculate the last item position
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
     getFestival();
   }, []);
+
+  useEffect(() => {
+
+    if(isInitialMount.current){
+      isInitialMount.current = false;
+    } else {
+      //to calculate the last item position
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
+  }, [loading]);
 
   return (
     <div className="festivalDetails-container">
@@ -88,33 +99,36 @@ function FestivalDetailsPage() {
           </article>
         </div>
       )}
-      <div className="carousel-container">
-        <motion.div
-          ref={carousel}
-          className="carousel"
-          whileTap={{ cursor: "move" }}
-        >
-          {festival && (
-            <motion.div
-              className="slider"
-              drag="x"
-              dragConstraints={{ right: 0, left: -width }}
-            >
-              {festival.bands.map((band) => (
-                <motion.div className="item">
-                  <BandCard key={band.id} {...band} />
-                </motion.div>
-              ))}
-            </motion.div>
-          )}
-        </motion.div>
-        <img
-          className="arrow"
-          src={scroll}
-          height="50"
-          alt="skull arrow right"
-        />
-      </div>
+      {loading && <></>}
+      {!loading && (
+        <div className="carousel-container">
+          <motion.div
+            ref={carousel}
+            className="carousel"
+            whileTap={{ cursor: "move" }}
+          >
+            {festival && (
+              <motion.div
+                className="slider"
+                drag="x"
+                dragConstraints={{ right: 0, left: -width }}
+              >
+                {festival.bands.map((band) => (
+                  <motion.div key={band.id} className="item">
+                    <BandCard key={band.id} {...band} />
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+          </motion.div>
+          <img
+            className="arrow"
+            src={scroll}
+            height="50"
+            alt="skull arrow right"
+          />
+        </div>
+      )}
     </div>
   );
 }

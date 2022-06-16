@@ -8,7 +8,7 @@ import SearchBar from "./SearchBar";
 const API_URL = "http://localhost:5005";
 
 function FestivalList() {
-  const [festivals, setfestivals] = useState([]);
+  const [festivals, setFestivals] = useState([]);
   const [updateFestivals, setUpdateFestivals] = useState(festivals);
   const { isLoggedIn } = useContext(AuthContext);
 
@@ -16,7 +16,7 @@ function FestivalList() {
     axios
       .get(`${API_URL}/api/festivals`)
       .then((response) => {
-        setfestivals(response.data);
+        setFestivals(response.data);
         setUpdateFestivals(response.data);
       })
       .catch((error) => console.log(error));
