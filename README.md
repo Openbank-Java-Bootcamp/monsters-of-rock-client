@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<<h1 align="center"> <strong>Monsters of rock</strong> : </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description of the project
 
-## Available Scripts
+<p> Monsters of rock is a single-page application (SPA) that facilitates access to people who, want to know about rock festivals and all the related information. They will have a list of festivals which they can filter by name or country where it is celebrated. You can access the lineup of each festival and see information about the bands. Logged-in users will have the possibility to add new festivals and bands as well as edit and delete them. <p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>
+  Project structure created with Marvelappp,  (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u)
+</p>
+<br>
+![wireframe](./src/assets/wireframe1.png)
+![wireframe](./src/assets/wireframe2.png)
+![wireframe](./src/assets/wireframe3.png)
+![wireframe](./src/assets/wireframe4.png)
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+<p>1. Clone this repository </p>
+<p>2. Install all dependencies for Monsters of Rock with npm
+<p>`$ npm install marked`</p>
+<p>3. Run the app with npm start </p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+<p align="center">
+   <a href="https://www.npmjs.com/">
+     <img src="https://img.shields.io/badge/npm-v8.3.1-brightgreen" />
+   </a>
+   <a href="https://nodejs.org/en/">
+     <img src="https://img.shields.io/badge/Node.js-v17.4.0-brightgreen" />
+   </a>
+   <a href="https://es.reactjs.org/">
+    <img alt="React" src="https://img.shields.io/badge/React-v18.1.0-brightgreen" target="_blank" />
+   </a>
+   <a href="https://v5.reactrouter.com/">
+    <img src="https://img.shields.io/badge/react-router-dom-v6.3.0-brightgreen" />
+   </a>
+    <a href="https://ant.design/">
+    <img src="https://img.shields.io/badge/antd-v4.21.2-brightgreen" />
+   </a>
+   <a href="https://www.framer.com/motion/">
+    <img src="https://img.shields.io/badge/framer%20motion-v6.3.11-brightgreen">
+   </a>
+     <a href="https://www.npmjs.com/package/react-multi-select-component">
+    <img src="https://img.shields.io/badge/react%20multi%20select%20component-v4.2.9-brightgreen">
+   </a>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Components and Pages structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Path                | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| /signup             | Form to register                                               |
+| /login              | Form to sing in                                                |
+| /                   | View that shows homepage with all festivals and the search bar |
+| /edit/:shop         | Shop is able to edit it's own profile                          |
+| /bands/:id          | Description of a single product                                |
+| /festival/:id       | Shows Festival details                                         |
+| /bands/edit/:id     | Edit and delete Bands info                                     |
+| /Festivals/edit/:id | Edit and delete festivals info                                 |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Future Work
 
-### `npm run eject`
+<p>1. Add a map where the festivals can be located </p>
+<p>2. Add rate festivals functionality </p>
+<p>3. Add a calendar with upcoming events </p>
+<p>3. Add a calendar with upcoming events </p>
+<p>4. Add comments to festivals and bands functionality </p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##Resources
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>My dear teachers Raymond Moroun and Shaun Reilly</p>
+<p>(https://www.framer.com/motion/)/p>
+<p>(https://www.npmjs.com/) </p>
