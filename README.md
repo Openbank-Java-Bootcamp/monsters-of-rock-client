@@ -8,14 +8,21 @@
 
 ## Wireframes
 
+<p>
+  Check my Trello board here (https://trello.com/b/Xcw9ONOB/monsters-of-rock).
+</p>
+<p>
+  Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
+</p>
+
 <br>
-![wireframe](/readme_img/wireframe1.png)
+![wireframe] (/readme_img/wireframe1.png)
 <br>
-![wireframe2](/readme_img/wireframe2.png)
+![wireframe2] (/readme_img/wireframe2.png)
 <br>
-![wireframe3](/readme_img/wireframe3.png)
+![wireframe3] (/readme_img/wireframe3.png)
 <br>
-![wireframe4](/readme_img/wireframe4.png)
+![wireframe4] (/readme_img/wireframe4.png)
 <br>
 
 ## Setup
