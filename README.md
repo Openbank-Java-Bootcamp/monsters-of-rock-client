@@ -12,13 +12,13 @@
   Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
 </p>
 <br>
-![wireframe1](./src/assets/wireframe1.png)
+![wireframe1](./readme_img/wireframe1.png)
 <br>
-![wireframe2](./src/assets/wireframe2.png)
+![wireframe2](./readme_img/wireframe2.png)
 <br>
-![wireframe3](./src/assets/wireframe3.png)
+![wireframe3](./readme_img/wireframe3.png)
 <br>
-![wireframe4](./src/assets/wireframe4.png)
+![wireframe4](./readme_img/wireframe4.png)
 <br>
 
 ## Setup
@@ -78,5 +78,5 @@
 ## Resources
 
 <p>My dear teachers Raymond Moroun and Shaun Reilly</p>
-<p>(https://www.framer.com/motion/)/p>
+<p>(https://www.framer.com/motion/)</p>
 <p>(https://www.npmjs.com/) </p>
