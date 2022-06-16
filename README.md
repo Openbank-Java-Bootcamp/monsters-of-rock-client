@@ -8,9 +8,6 @@
 
 ## Wireframes
 
-<p>
-  Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
-</p>
 <br>
 ![wireframe](/readme_img/wireframe1.png)
 <br>
