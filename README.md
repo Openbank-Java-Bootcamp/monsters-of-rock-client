@@ -1,4 +1,4 @@
-<<h1 align="center"> <strong>Monsters of rock</strong> : </h1>
+<<h1 align="center"> <strong>Monsters of rock</strong></h1>
 
 ## Description of the project
 
@@ -9,13 +9,13 @@
 ## Wireframes
 
 <p>
-  Project structure created with Marvelappp,  (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u)
+  Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
 </p>
 <br>
-![wireframe](./src/assets/wireframe1.png)
-![wireframe](./src/assets/wireframe2.png)
-![wireframe](./src/assets/wireframe3.png)
-![wireframe](./src/assets/wireframe4.png)
+![plot](./src/assets/wireframe1.png)
+![plot](./src/assets/wireframe2.png)
+![plot](./src/assets/wireframe3.png)
+![plot](./src/assets/wireframe4.png)
 <br>
 
 ## Setup
@@ -38,7 +38,7 @@
     <img alt="React" src="https://img.shields.io/badge/React-v18.1.0-brightgreen" target="_blank" />
    </a>
    <a href="https://v5.reactrouter.com/">
-    <img src="https://img.shields.io/badge/react-router-dom-v6.3.0-brightgreen" />
+    <img src="https://img.shields.io/badge/react%20router%20dom-v6.3.0-brightgreen" />
    </a>
     <a href="https://ant.design/">
     <img src="https://img.shields.io/badge/antd-v4.21.2-brightgreen" />
@@ -51,7 +51,7 @@
    </a>
 </p>
 
-##Components and Pages structure
+## Components and Pages structure
 
 | Path                | Description                                                    |
 | ------------------- | -------------------------------------------------------------- |
@@ -64,7 +64,7 @@
 | /bands/edit/:id     | Edit and delete Bands info                                     |
 | /Festivals/edit/:id | Edit and delete festivals info                                 |
 
-##Future Work
+## Future Work
 
 <p>1. Add a map where the festivals can be located </p>
 <p>2. Add rate festivals functionality </p>
@@ -72,7 +72,7 @@
 <p>3. Add a calendar with upcoming events </p>
 <p>4. Add comments to festivals and bands functionality </p>
 
-##Resources
+## Resources
 
 <p>My dear teachers Raymond Moroun and Shaun Reilly</p>
 <p>(https://www.framer.com/motion/)/p>
