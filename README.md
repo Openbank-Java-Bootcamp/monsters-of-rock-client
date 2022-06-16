@@ -12,10 +12,10 @@
   Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
 </p>
 <br>
-![wireframe1](./src/assets/wireframe1.png)
-![wireframe2](./src/assets/wireframe2.png)
-![wireframe3](./src/assets/wireframe3.png)
-![wireframe4](./src/assets/wireframe4.png)
+<p>![wireframe1](./src/assets/wireframe1.png)</p>
+<p>![wireframe2](./src/assets/wireframe2.png)</p>
+<p>![wireframe3](./src/assets/wireframe3.png)</p>
+<p> ![wireframe4](./src/assets/wireframe4.png)</p>
 <br>
 
 ## Setup
