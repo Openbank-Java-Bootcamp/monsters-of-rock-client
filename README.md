@@ -12,7 +12,7 @@
   Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
 </p>
 <br>
-![plot](./readme_img/wireframe1.png)
+![plot](./src/assets/monstersOfRock.png)
 <br>
 ![wireframe2](./readme_img/wireframe2.png)
 <br>
