@@ -16,7 +16,7 @@
 </p>
 
 <br>
-![wireframe](/readme_img/wireframe1.png)
+![wireframe](https://github.com/Openbank-Java-Bootcamp/monsters-of-rock-client/blob/main/readmeImg/wireframe1.png)
 <br>
 ![wireframe2](/readme_img/wireframe2.png)
 <br>
