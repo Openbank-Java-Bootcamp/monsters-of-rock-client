@@ -16,7 +16,7 @@
 </p>
 
 <br>
-![wireframe] (/readmeImg/wireframe1.png)
+![wireframe] (/readmeImge/wirefram1.png)
 <br>
 ![wireframe2] (/readmeImg/wireframe2.png)
 <br>
