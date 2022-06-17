@@ -8,15 +8,16 @@
 
 ## Wireframes
 
-```s
+<br>
 
-- Check my Trello board [here]
-
-
-- Project structure created with [Marvelappp]
+- Check my Trello board [here](https://trello.com/b/Xcw9ONOB/monsters-of-rock)
 
 
-```
+- Project structure created with [Marvelappp](https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u)
+
+<br>
+
+
 
 ![wireframe](https://github.com/Openbank-Java-Bootcamp/monsters-of-rock-client/blob/main/readmeImg/wireframe1.png)
 
@@ -102,5 +103,4 @@ My dear teachers Raymond Moroun and Shaun Reilly<br>
 https://www.framer.com/motion/<br>
 https://www.npmjs.com/
 
-[here]: https://trello.com/b/Xcw9ONOB/monsters-of-rock
-[marvelapp]: https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u
+
