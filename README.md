@@ -10,10 +10,10 @@
 
 ```s
 
-- Check my Trello board here (https://trello.com/b/Xcw9ONOB/monsters-of-rock).
+- Check my Trello board [here]
 
 
-- Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
+- Project structure created with [Marvelappp]
 
 
 ```
@@ -33,7 +33,6 @@
 ![wireframe4](https://github.com/Openbank-Java-Bootcamp/monsters-of-rock-client/blob/main/readmeImg/wireframe4.png)
 <br>
 
-
 ## Setup
 
 <p>1. Clone this repository </p>
@@ -43,6 +42,7 @@
 ```sh
 npm install
 ```
+
 </p>
 
 <p>3. Run the app with npm start </p>
@@ -87,17 +87,20 @@ npm install
 | /Festivals/edit/:id | Edit and delete festivals info                                 |
 
 ## Future Work
+
 ```s
-1. Add a map where the festivals can be located 
-2. Add rate festivals functionality 
-3. Add a calendar with upcoming events 
-3. Add a calendar with upcoming events 
-4. Add comments to festivals and bands functionality 
+1. Add a map where the festivals can be located
+2. Add rate festivals functionality
+3. Add a calendar with upcoming events
+3. Add a calendar with upcoming events
+4. Add comments to festivals and bands functionality
 ```
 
 ## Resources
 
-My dear teachers Raymond Moroun and Shaun Reilly
-(https://www.framer.com/motion/)<br>
-(https://www.npmjs.com/) 
- 
+My dear teachers Raymond Moroun and Shaun Reilly<br>
+https://www.framer.com/motion/<br>
+https://www.npmjs.com/
+
+[here]: https://trello.com/b/Xcw9ONOB/monsters-of-rock
+[marvelapp]: https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u
