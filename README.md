@@ -8,12 +8,15 @@
 
 ## Wireframes
 
-<p>
-  Check my Trello board here (https://trello.com/b/Xcw9ONOB/monsters-of-rock).
-</p>
-<p>
-  Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
-</p>
+```s
+
+- Check my Trello board here (https://trello.com/b/Xcw9ONOB/monsters-of-rock).
+
+
+- Project structure created with Marvelappp (https://marvelapp.com/whiteboard/y11jhBxnoEwvUrP6dl1u).
+
+
+```
 
 ![wireframe](https://github.com/Openbank-Java-Bootcamp/monsters-of-rock-client/blob/main/readmeImg/wireframe1.png)
 
@@ -30,11 +33,18 @@
 ![wireframe4](https://github.com/Openbank-Java-Bootcamp/monsters-of-rock-client/blob/main/readmeImg/wireframe4.png)
 <br>
 
+
 ## Setup
 
 <p>1. Clone this repository </p>
 <p>2. Install all dependencies for Monsters of Rock with npm
-<p>`$ npm install marked`</p>
+<p>
+
+```sh
+npm install
+```
+</p>
+
 <p>3. Run the app with npm start </p>
 
 ## Technologies Used
@@ -77,15 +87,17 @@
 | /Festivals/edit/:id | Edit and delete festivals info                                 |
 
 ## Future Work
-
-<p>1. Add a map where the festivals can be located </p>
-<p>2. Add rate festivals functionality </p>
-<p>3. Add a calendar with upcoming events </p>
-<p>3. Add a calendar with upcoming events </p>
-<p>4. Add comments to festivals and bands functionality </p>
+```s
+1. Add a map where the festivals can be located 
+2. Add rate festivals functionality 
+3. Add a calendar with upcoming events 
+3. Add a calendar with upcoming events 
+4. Add comments to festivals and bands functionality 
+```
 
 ## Resources
 
-<p>My dear teachers Raymond Moroun and Shaun Reilly</p>
-<p>(https://www.framer.com/motion/)</p>
-<p>(https://www.npmjs.com/) </p>
+My dear teachers Raymond Moroun and Shaun Reilly
+(https://www.framer.com/motion/)<br>
+(https://www.npmjs.com/) 
+ 
